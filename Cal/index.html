@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="output-area">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+
+      <div class="buttons-container">
+        <div class="buttons-container-row">
+          <button data-all-clear class="btn-green">AC</button>
+          <button data-delete class="btn-green span-two">Delete</button>
+         
+          <button data-operation class="btn-red">÷</button>
+        </div>
+         <div class="buttons-container-row">
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation class="btn-red">×</button>
+       </div>
+
+       <div class="buttons-container-row">
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation class="btn-red">+</button>
+
+      </div>
+      <div class="buttons-container-row">
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation class="btn-red">-</button>
+        </div>
+      <div class="buttons-container-row">
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button class="span-two btn-red" data-equals>=</button>
+      </div>
+    </div>
+  </body>
+</html>
